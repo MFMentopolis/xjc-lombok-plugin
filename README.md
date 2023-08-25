@@ -14,6 +14,7 @@ Example
 ---------------------
 This plugin generates lombok standard annotations for toString, hashCode and equals:
 ```java
+@Builder
 @ToString
 @EqualsAndHashCode
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -78,7 +79,7 @@ In contract first scenarios webservice clients models are often generated with j
     <dependency>
         <groupId>org.projectlombok</groupId>
 		<artifactId>lombok</artifactId>
-		<version>1.14.8</version>
+		<version>1.18.28</version>
 		<scope>provided</scope>
     </dependency>
 </dependencies>
@@ -127,7 +128,7 @@ In contract first scenarios webservice clients models are often generated with j
     <dependency>
         <groupId>org.projectlombok</groupId>
 		<artifactId>lombok</artifactId>
-		<version>1.14.8</version>
+		<version>1.18.28</version>
 		<scope>provided</scope>
     </dependency>
 </dependencies>
@@ -171,7 +172,7 @@ In contract first scenarios webservice clients models are often generated with j
         <dependency>
             <groupId>org.projectlombok</groupId>
 		    <artifactId>lombok</artifactId>
-		    <version>1.14.8</version>
+		    <version>1.18.28</version>
 		    <scope>provided</scope>
         </dependency>
     </dependencies>
