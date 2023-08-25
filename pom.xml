@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.plushnikov.xjc</groupId>
     <artifactId>xjc-lombok-plugin</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>7</version>
+        <version>9</version>
     </parent>
 
     <url>https://github.com/mplushnikov/xjc-guava-plugin</url>
@@ -20,12 +20,12 @@
 
     <properties>
         <!--General stuff-->
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <lombok.version>1.18.12</lombok.version>
+        <lombok.version>1.18.28</lombok.version>
         <lombok-annotations.includes>
             lombok/AccessLevel.java,lombok/*ArgsConstructor.java,lombok/Data.java,
             lombok/Getter.java,lombok/Setter.java,lombok/Equals*.java,
@@ -58,13 +58,13 @@
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-xjc</artifactId>
-            <version>2.3.3</version>
+            <version>4.0.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -229,8 +229,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -281,4 +281,3 @@
         </plugins>
     </build>
 </project>
-
