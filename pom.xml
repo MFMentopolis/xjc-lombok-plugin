@@ -29,7 +29,7 @@
         <lombok-annotations.includes>
             lombok/AccessLevel.java,lombok/*ArgsConstructor.java,lombok/Data.java,
             lombok/Getter.java,lombok/Setter.java,lombok/Equals*.java,
-            lombok/ToString.java
+            lombok/ToString.java,lombok/Builder.java
         </lombok-annotations.includes>
     </properties>
 

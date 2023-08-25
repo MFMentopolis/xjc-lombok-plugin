@@ -24,6 +24,7 @@ import com.sun.tools.xjc.outline.ClassOutline;
 import com.sun.tools.xjc.outline.Outline;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import lombok.Builder;
 import org.xml.sax.ErrorHandler;
 
 import java.io.IOException;
@@ -66,6 +67,8 @@ public class XjcLombokPlugin extends Plugin {
     protected void generateLombokAnnotations(JDefinedClass implClass) {
         final JAnnotationUse toStringAnnotation = implClass.annotate(ToString.class);
         final JAnnotationUse equalsAndHashCodeAnnotation = implClass.annotate(EqualsAndHashCode.class);
+        final JAnnotationUse builderAnnotation = implClass.annotate(Builder.class);
+
         if (implClass._extends() instanceof JDefinedClass) {
             toStringAnnotation.param("callSuper", true);
             equalsAndHashCodeAnnotation.param("callSuper", true);
